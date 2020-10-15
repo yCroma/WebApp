@@ -5,18 +5,18 @@
 </head>
 <body bgcolor="#FFDDDD">
 <?php
-if(isset($_GET['win'])){  //勝った回数
-   $win = $_GET['win'];
+if(isset($_POST['win'])){  //勝った回数
+   $win = $_POST['win'];
    } else {
    $win = 0;
    }
-if(isset($_GET['lose'])){  //負けた回数
-   $lose = $_GET['lose'];
+if(isset($_POST['lose'])){  //負けた回数
+   $lose = $_POST['lose'];
    } else {
    $lose = 0;
    }
-if(isset($_GET['aiko'])){  //あいこだった回数
-   $aiko = $_GET['aiko'];
+if(isset($_POST['aiko'])){  //あいこだった回数
+   $aiko = $_POST['aiko'];
    } else {
    $aiko = 0;
    }
