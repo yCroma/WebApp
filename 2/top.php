@@ -22,7 +22,7 @@ if(isset($_GET['aiko'])){  //あいこだった回数
    }
 ?>
 
-<form action="result.php" method="get">
+<form action="result.php" method="POST">
 じゃんけん　<input type="radio" name="janken" value="0">グー
 <input type="radio" name="janken" value="1">チョキ
 <input type="radio" name="janken" value="2">パー
