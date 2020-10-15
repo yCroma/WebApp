@@ -29,6 +29,7 @@ if(isset($_GET['aiko'])){  //あいこだった回数
 <input type="submit" value="ぽん">
 <input type="hidden" value=<?php echo $win; ?>  name="win">
 <input type="hidden" value=<?php echo $aik0; ?> name="aiko">
+<input type="hidden" value=<?php echo $lose; ?> name="lose">
 </form>
 </body>
 </html>
