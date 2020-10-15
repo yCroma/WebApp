@@ -18,9 +18,9 @@ function hyouji($arg){
 $user = (int)@$_GET['janken']; //ユーザが入力した手を受け取る
 $com  = rand(0, 2);       //コンピュータの手を乱数で決める
 
-$win  = $_GET['win'];     //勝った回数
-$lose = $_GET['lose'];    //負けた回数
-$aiko = $_GET['aiko'];    //あいこだった回数
+$win  = $_GET['win'] ?? 0;     //勝った回数
+$lose = $_GET['lose']?? 0;    //負けた回数
+$aiko = $_GET['aiko']?? 0;    //あいこだった回数
 
 //勝ち負けを判定する
 if ($user == $com){
