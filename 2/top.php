@@ -14,7 +14,7 @@ if(isset($_GET['lose'])){  //負けた回数
    $lose = $_GET['lose'];
    } else {
    $lose = 0;
-　 }
+   }
 if(isset($_GET['aiko'])){  //あいこだった回数
    $aiko = $_GET['aiko'];
    } else {
