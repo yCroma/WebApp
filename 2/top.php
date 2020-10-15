@@ -4,9 +4,9 @@
 <title>シンプルなじゃんけんゲーム</title>
 </head>
 <body bgcolor="#FFDDDD">
-if(isset($_GET[win])){  //勝った回数
-   $win = $_GET[win];
 <?php
+if(isset($_GET['win'])){  //勝った回数
+   $win = $_GET['win'];
    } else {
    $win = 0;
    }
