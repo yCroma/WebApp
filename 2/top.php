@@ -11,7 +11,7 @@ if(isset($_GET[win])){  //勝った回数
    $win = 0;
    }
 if(isset($_GET['lose'])){  //負けた回数
-   $lose = $_GET['lose']
+   $lose = $_GET['lose'];
    } else {
    $lose = 0;
 　 }
