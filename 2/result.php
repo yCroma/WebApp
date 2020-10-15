@@ -39,7 +39,7 @@ echo "</font> で，コンピュータは <font color=red>";
 echo hyouji($com);
 echo "</font><BR>";
 echo "したがって，$result";
-echo "<BR><BR>結果，<font color=red>".$w1n."</font>勝 <font color=red>"; 
+echo "<BR><BR>結果，<font color=red>".$win."</font>勝 <font color=red>"; 
 echo $lose."</font>敗 <font color=red>".$aiko."</font>分け";
 ?>
 <form action="top.php" method="POST">
