@@ -11,6 +11,7 @@ function hyouji($arg){
   } elseif ($arg == 1) { $str = "チョキ";
   } else {               $str = "パー";
   }
+  return $str;
 }
 
 $user = @$_GET['janken']; //ユーザが入力した手を受け取る
