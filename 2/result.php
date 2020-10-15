@@ -15,7 +15,7 @@ function hyouji($arg){
 }
 
 // リクエストで送られてくる値は文字列のため、intにキャストする
-$user = (int)@$_GET['janken']; //ユーザが入力した手を受け取る
+$user = (int)$_POST['janken']; //ユーザが入力した手を受け取る
 $com  = rand(0, 2);       //コンピュータの手を乱数で決める
 
 $win  = $_GET['win'] ?? 0;     //勝った回数
