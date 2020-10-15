@@ -46,7 +46,7 @@ echo $lose."</font>敗 <font color=red>".$aiko."</font>分け";
 <input type="hidden" value=<?php echo $lose; ?> name="lose">
 <input type="hidden" value=<?php echo $aiko; ?> name="aiko">
 </form>
-<from action="top.php" method="GET">
+<form action="top.php" method="GET">
 <input type="submit" value="はじめから？">
 <input type="hidden" value=0 name="win">
 <input type="hidden" value=0 name="lose">
