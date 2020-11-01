@@ -5,8 +5,8 @@
 
 # 設計
 
-- index.php `ゲームスタート`ボタンを押して、start.phpへ遷移する
-- start.phpが動的に生成された瞬間の時刻がスタート時間
-- start.php `時間になったと思ったらストップボタンを押す`、result.phpへ遷移する
+- index.php `ゲームスタート`ボタンを押して、stop.phpへ遷移する
+- stop.phpが動的に生成された瞬間の時刻がスタート時間
+- stop.php `時間になったと思ったらストップボタンを押す`、result.phpへ遷移する
 - result.phpが生成された瞬間の時刻をエンド時間とする
 - result.phpでdiffを計算 `+- ~秒でした！`
