@@ -5,6 +5,8 @@
 
 # 設計
 
-- index.phpからスタート時のDateTimeオブジェクトをPOST
-- セッションを維持しつつ、ストップボタン入力時のDateTimeオブジェクトもPOST
-- result.phpで$startと$endのDateTimeオブジェクトのdiffを出して終了
+- index.php `ゲームスタート`ボタンを押して、start.phpへ遷移する
+- start.phpが動的に生成された瞬間の時刻がスタート時間
+- start.php `時間になったと思ったらストップボタンを押す`、result.phpへ遷移する
+- result.phpが生成された瞬間の時刻をエンド時間とする
+- result.phpでdiffを計算 `+- ~秒でした！`
