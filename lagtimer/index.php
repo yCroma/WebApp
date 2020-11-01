@@ -9,7 +9,7 @@
         <h1>LagTimer</h1>
     </header>
     <main>
-        <form action="result.php" method="POST">
+        <form action="./stop.php" method="POST">
             <?php
                 $timezone = new DateTimeZone('Asia/Tokyo');
                 $start = new DateTime("now", $timezone);
