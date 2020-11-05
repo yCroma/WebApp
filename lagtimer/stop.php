@@ -10,11 +10,12 @@
     </header>
     <main>
         <form action="./result.php" method="POST">
-        <?php
-            $timezone = new DateTimeZone('Asia/Tokyo');
-            $start = new DateTime('now', $timezone);
-        ?>
-        <input type="hidden" name="start" value='<?php print_r($start); ?>'>
+<?php
+$timezone = new DateTimeZone('Asia/Tokyo');
+$start = new DateTime('now', $timezone);
+$enc_start = serialize($start);
+file_put_contents('temp', $enc_start);
+?>
         <input type="submit" value="ストップ！！">
         </form>
     </main>
