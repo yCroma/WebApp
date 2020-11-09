@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fetchテスト</title>
+    <script src="./fetch.js"></script>
+</head>
+<body>
+    <h1>Fetchのテスト</h1>
+    <p>
+    <button onclick="getrequest();">GET送信</button>
+    <div id="get_done"></div>
+    <button onclick="postrequest();">POST送信</button>
+    <div id="done"></div>
+    </p>
+    <p>
+        <form action="./response.php" method="POST">
+            <input type="hidden" name="test" value="testkun">
+            <input type="submit" value="POSTの送信">
+        </form>
+    </p>
+
+</body>
+</html>
