@@ -25,6 +25,13 @@ print_r($end);
 echo("</br>");
 echo($end->format('H時i分s秒'));
 echo("</br>");
+
+// $startと$endから実際に掛かった時間を取得
+$diff_time = $start->diff($end);
+print_r($diff_time);
+echo("</br>");
+echo $diff_time->format('%s.%f');
+echo("</br>");
 ?>
         <form action="./index.php" method="POST">
         <input type="submit" value="もう一回遊ぶ！！">
