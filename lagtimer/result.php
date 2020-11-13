@@ -32,6 +32,21 @@ print_r($diff_time);
 echo("</br>");
 echo $diff_time->format('%s.%f');
 echo("</br>");
+
+// 計測する時間を取得
+$enc_answer = file_get_contents('ans');
+$answer = unserialize($enc_answer);
+print_r($answer);
+echo("</br>");
+echo($answer->format('H時i分s秒'));
+echo("</br>");
+
+// 実際にかかった時間と計測している時間のdiff
+$zure_time = $end->diff($answer);
+print_r($zure_time);
+echo("</br>");
+echo $zure_time->format('%s.%f');
+echo("</br>");
 ?>
         <form action="./index.php" method="POST">
         <input type="submit" value="もう一回遊ぶ！！">
