@@ -10,13 +10,18 @@
     </header>
     <main>
         <form action="./stop.php" method="POST">
-            <?php
-                $timezone = new DateTimeZone('Asia/Tokyo');
-                $start = new DateTime("now", $timezone);
-                // print_r($start);
-                // echo $start->format('H時i分s秒');
-            ?>
-            <input type="hidden" name="start" value="<?php print_r($start); ?>">
+            <input id="5" type="radio" name="set_time" value="5" checked>
+            <label for="5">5秒にチャレンジ</label>
+            <br>
+            <input id="10" type="radio" name="set_time" value="10">
+            <label for="10">10秒にチャレンジ</label>
+            <br>
+            <input id="30" type="radio" name="set_time" value="30">
+            <label for="30">30秒にチャレンジ</label>
+            <br>
+            <input id="60" type="radio" name="set_time" value="60">
+            <label for="60">60秒にチャレンジ</label>
+            <br>
             <input type="submit" value="タイマースタート！！">
         </form>
     </main>

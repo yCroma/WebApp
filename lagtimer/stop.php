@@ -6,22 +6,31 @@
 </head>
 <body>
     <header>
-        <h1>Stopボタンを押してね</h1>
+        <h1>時間になったと思ったらストップボタンを押してね！！</h1>
     </header>
     <main>
         <form action="./result.php" method="POST">
-        <?php
-            $timezone = new DateTimeZone('Asia/Tokyo');
-            $end = new DateTime('now', $timezone);
-        ?>
-        <input type="hidden" name="end" value='<?php print_r($end); ?>'>
-        <input type="submit" value="stop!!">
+<?php
+// 計測開始時間の作成
+$timezone = new DateTimeZone('Asia/Tokyo');
+$start = new DateTime('now', $timezone);
+$enc_start = serialize($start);
+file_put_contents('temp', $enc_start);
+
+// 予想計測終了時間の作成
+$set_time = $_POST['set_time'] ?? null;
+echo $set_time;
+echo("</br>");
+$answer = $start->add(new DateInterval('PT' . $set_time . 'S'));
+print_r($answer);
+$enc_answer = serialize($answer);
+file_put_contents('ans', $enc_answer);
+//$date = new DateTime('now');
+//$date->add(new DateInterval('PT10S'));
+echo("</br>");
+?>
+        <input type="submit" value="ストップ！！">
         </form>
     </main>
-    <?php
-        $start = $_POST['start'] ?? null;
-        echo($start);
-        //echo($start->format('H時i分s秒'));
-    ?>
 </body>
 </html>
